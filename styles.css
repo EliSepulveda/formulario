@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+}
+
+.form-container {
+    width: 800px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.error-message {
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #f5c6cb;
+    border-radius: 4px;
+    font-size: 1.2em;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    align-items: flex-start;
+}
+
+.form-group {
+    flex: 1;
+    margin-right: 15px;
+}
+
+.form-group:last-child {
+    margin-right: 0;
+}
+
+.small {
+    flex: 0.2;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 1.1em;
+}
+
+.form-group input, .form-group select, .form-group textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 1.1em;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    height: 45px;
+    background-color: #fff;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+textarea {
+    height: 80px;
+}
+
+/* Estilos específicos para el cambio de "We accept" y "Message" */
+.payment-icons-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f7f7f7;
+    width: 40%; /* Ajusta este valor según tu necesidad */
+}
+
+.payment-icons-box label {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.payment-icons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.payment-icons img {
+    width: 30px;
+    margin-right: 10px;
+}
+
+.payment-icons img:last-child {
+    margin-right: 0;
+}
+
+.message-box {
+    flex: 1;
+    margin-left: 20px;
+}
+
+.message-box label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.message-box textarea {
+    width: 100%;
+    height: 80px;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+}
+
+/* Estilos para los botones */
+.form-buttons {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 30px;
+    border-top: 1px solid #ccc;
+    padding-top: 20px;
+}
+
+.cancel, .send {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.cancel {
+    background-color: #ccc;
+    margin-right: 15px;
+}
+
+.send {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.send:hover {
+    background-color: #0056b3;
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form Example</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="form-container">
+        <h1>Payment form example</h1>
+    
+        <div class="error-message">Some fields are missing</div>
+    
+        <!-- Card #, CVC #, Amount in the same row -->
+        <div class="form-row">
+            <div class="form-group">
+                <label for="card-number">Card #</label>
+                <input type="text" id="card-number" placeholder="XXXXXXXXXXXXXX">
+            </div>
+            <div class="form-group small">
+                <label for="cvc">CVC #</label>
+                <input type="text" id="cvc" placeholder="0000">
+            </div>
+            <div class="form-group">
+                <label for="amount">Amount</label>
+                <input type="text" id="amount" placeholder="$ Amount">
+            </div>
+        </div>
+    
+        <!-- First Name, Last Name in the same row -->
+        <div class="form-row">
+            <div class="form-group">
+                <label for="first-name">First Name</label>
+                <input type="text" id="first-name" placeholder="First Name">
+            </div>
+            <div class="form-group">
+                <label for="last-name">Last Name</label>
+                <input type="text" id="last-name" placeholder="Last Name">
+            </div>
+        </div>
+    
+        <!-- City, State, Postal Code in the same row -->
+        <div class="form-row">
+            <div class="form-group">
+                <label for="city">City</label>
+                <input type="text" id="city" placeholder="City">
+            </div>
+            <div class="form-group">
+                <label for="state">State</label>
+                <select id="state">
+                    <option>Pick a state</option>
+                    <!-- Add more options as needed -->
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="postal-code">Postal Code</label>
+                <input type="text" id="postal-code" placeholder="Postal Code">
+            </div>
+        </div>
+    
+        <!-- Message and We accept icons in the same row (order changed) -->
+        
+        <div class="form-row">
+            <div class="payment-icons-box">
+                <label>We accept:</label>
+                <div class="payment-icons">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Visa.svg" alt="Visa">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg" alt="MasterCard">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/5f/Amex_12.jpg" alt="Amex">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/f/fb/Discover_Card_logo.png" alt="Discover">
+                </div>
+            </div>
+            <div class="form-group message-box">
+                <label for="message">Message</label>
+                <textarea id="message" placeholder="Add any notes here."></textarea>
+            </div>
+        </div>
+        
+            </div>
+        </div>
+    
+        
+        <div class="form-buttons">
+            <button class="cancel">Cancel</button>
+            <button class="send">Send</button>
+        </div>
+    </div>
+    
